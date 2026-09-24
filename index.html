@@ -1,0 +1,506 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="description" content="Kaya Nogalska, Creative Producer: video, design and campaigns.">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Kaya Nogalska</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#EDEFF2;
+  --surface:#F8F9FB;
+  --ink:#15171C;
+  --muted:#5B606B;
+  --line:#CDD1D8;
+  --accent:#2E46E8;
+  --accent-ink:#FFFFFF;
+  --rec:#E5383B;
+  --stripe:rgba(46,70,232,.07);
+  --display:"Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#101217; --surface:#171A21; --ink:#E8EAEE; --muted:#9AA0AC;
+    --line:#2B303A; --accent:#8196FF; --accent-ink:#0E1015; --rec:#FF5C5F;
+    --stripe:rgba(129,150,255,.08);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#101217; --surface:#171A21; --ink:#E8EAEE; --muted:#9AA0AC;
+  --line:#2B303A; --accent:#8196FF; --accent-ink:#0E1015; --rec:#FF5C5F;
+  --stripe:rgba(129,150,255,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-inline:clamp(16px,5vw,64px)}
+.wrap{max-width:1180px;margin-inline:auto}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+
+/* Nav */
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+nav .who{font-family:var(--display);font-weight:600;font-size:16px;text-decoration:none;letter-spacing:.01em}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{text-decoration:none;color:var(--muted);font-size:15px}
+nav ul a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{padding-block:clamp(56px,10vw,120px) clamp(48px,7vw,88px);display:grid;gap:28px}
+.rec{display:inline-flex;align-items:center;gap:10px;color:var(--muted)}
+.rec::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--rec);animation:blink 1.6s steps(2,start) infinite}
+@keyframes blink{50%{opacity:.25}}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(46px,9.5vw,128px);line-height:.92;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.hero .role{font-family:var(--display);font-weight:400;font-size:clamp(22px,3vw,34px);line-height:1.2;margin:0;color:var(--muted);letter-spacing:-.01em}
+.hero .role strong{color:var(--ink);font-weight:600}
+.hero .thesis{font-size:clamp(19px,2vw,23px);max-width:34ch;margin:0;line-height:1.45}
+.cta{display:inline-flex;align-items:center;gap:10px;align-self:start;justify-self:start;background:var(--ink);color:var(--ground);text-decoration:none;padding:13px 20px;border-radius:999px;font-weight:500;font-size:15px}
+.cta:hover{background:var(--accent);color:var(--accent-ink)}
+
+/* Intro */
+.intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;padding-block:40px 72px;border-top:1px solid var(--line)}
+.intro p{margin:0 0 14px;max-width:62ch;color:var(--muted)}
+.intro p:first-child{color:var(--ink)}
+.sectors{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.sectors span{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:14px;color:var(--muted)}
+
+/* Numbers */
+.numbers{padding-block:8px 72px}
+.numbers h2{margin:0 0 18px;color:var(--muted);font-weight:500}
+.numbers dl{margin:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.num{padding:22px 20px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column-reverse;justify-content:flex-end;gap:6px;background:var(--ground)}
+.num dd{margin:0;font-family:var(--display);font-weight:800;font-size:clamp(34px,4vw,52px);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.num dt{font-size:14px;color:var(--muted);line-height:1.35;max-width:22ch}
+.num.lead{background:var(--ink);color:var(--ground);justify-content:flex-end}
+.num.lead dd{color:var(--ground)}
+.num.lead dt{color:var(--ground);opacity:.75;font-size:15px}
+@media (max-width:900px){.numbers dl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Section heads */
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-block:20px;border-top:2px solid var(--ink)}
+.sec-head h2{font-family:var(--display);font-weight:600;font-size:clamp(30px,4.4vw,52px);letter-spacing:-.025em;line-height:1;margin:0}
+.sec-head .mono{color:var(--muted)}
+
+/* Case studies */
+.case{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,56px);padding-block:56px;border-bottom:1px solid var(--line)}
+.case .client{color:var(--accent);margin:0 0 12px}
+.case h3{font-family:var(--display);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.08;letter-spacing:-.02em;margin:0 0 18px;text-wrap:balance}
+.case p{margin:0 0 14px;max-width:58ch}
+.case .note{border-left:2px solid var(--accent);padding-left:14px;color:var(--ink)}
+.meta{display:grid;gap:18px;margin-top:26px}
+.meta .label{color:var(--muted);margin-bottom:8px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:3px 10px;font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 32px}
+.stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(30px,3.4vw,42px);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.stat small{font-size:14px;color:var(--muted)}
+
+/* Media frames */
+.reel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-content:start}
+.reel.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.frame{margin:0;display:grid;gap:8px}
+.frame .screen{position:relative;aspect-ratio:9/16;max-width:100%;border-radius:10px;border:1px solid var(--line);
+  background:repeating-linear-gradient(135deg,var(--stripe) 0 10px,transparent 10px 20px),var(--surface);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+.frame.sq .screen{aspect-ratio:1/1}
+.frame.wide .screen{aspect-ratio:16/9}
+.frame.span2{grid-column:span 2}
+.frame.span-all{grid-column:1/-1}
+.screen .tc{position:absolute;top:10px;left:10px;right:10px;display:flex;justify-content:space-between;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.04em}
+.screen .play{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--muted);display:grid;place-items:center;color:var(--muted)}
+.screen .play svg{width:14px;height:14px;fill:currentColor;margin-left:3px}
+.screen.live{background:#000;border-color:transparent}
+.screen video,.screen img{width:100%;height:100%;object-fit:cover;display:block}
+.reel-label{grid-column:1/-1;margin:0;color:var(--muted)}
+.reel.solo{grid-template-columns:minmax(0,360px);justify-content:center}
+.frame figcaption{font-size:14px;line-height:1.35;color:var(--muted)}
+.frame figcaption b{color:var(--ink);font-weight:600;display:block}
+
+/* Featured campaign */
+.campaign{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,56px);padding-block:48px 56px;border-bottom:1px solid var(--line)}
+.campaign .client{color:var(--accent);margin:0 0 12px}
+.campaign h3{font-family:var(--display);font-weight:600;font-size:clamp(24px,2.6vw,32px);line-height:1.1;letter-spacing:-.02em;margin:0 0 18px;text-wrap:balance}
+.campaign p{margin:0 0 14px;max-width:58ch}
+.watch{display:inline-flex;align-items:center;gap:10px;margin:4px 0 6px;padding:10px 16px 10px 10px;border:1px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:500;font-size:15px}
+.watch .yt{width:26px;height:26px;border-radius:50%;background:var(--rec);color:#fff;display:grid;place-items:center}
+.watch .yt svg{width:9px;height:9px;fill:currentColor;margin-left:2px}
+.watch:hover{background:var(--ink);color:var(--ground)}
+.campaign-side{display:grid;gap:28px;align-content:start}
+.frame.p45 .screen{aspect-ratio:4/5}
+.cs-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:20px;align-items:start}
+.cs-pair .reel.solo{grid-template-columns:minmax(0,1fr)}
+@media (max-width:560px){.cs-pair{grid-template-columns:minmax(0,1fr)}.cs-pair .reel.solo{grid-template-columns:minmax(0,320px);justify-content:center}}
+.runsheet{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px;align-self:start}
+.rs-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);padding-bottom:12px;border-bottom:1px solid var(--line)}
+.runsheet ol{list-style:none;margin:0;padding:0;counter-reset:rs}
+.runsheet li{counter-increment:rs;display:grid;grid-template-columns:2em 5.4em minmax(0,1fr);align-items:baseline;gap:8px;padding-block:11px;border-bottom:1px dashed var(--line)}
+.runsheet li:last-child{border-bottom:0;padding-bottom:0}
+.runsheet li::before{content:counter(rs,decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums}
+.runsheet li .mono{color:var(--muted);font-size:11px}
+.runsheet li b{font-weight:500}
+
+/* Carousel */
+.carousel{display:grid;gap:10px;min-width:0}
+.car-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.car-ctrl{display:flex;align-items:center;gap:8px}
+.car-count{color:var(--muted);font-variant-numeric:tabular-nums;min-width:4.5em;text-align:right}
+.car-btn{font:inherit;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.car-btn:hover{border-color:var(--ink)}
+.car-btn:disabled{opacity:.35;cursor:default}
+.car-track{list-style:none;margin:0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:40%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;border-radius:10px}
+.car-track::-webkit-scrollbar{display:none}
+.slide{scroll-snap-align:start;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:var(--surface)}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.car-cap{margin:0;font-size:14px;color:var(--muted)}
+.car-cap b{color:var(--ink);font-weight:600;display:block}
+@media (max-width:560px){.car-track{grid-auto-columns:82%}}
+
+/* Founders */
+.founders{padding-block:56px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,56px)}
+.founders .client{color:var(--accent);margin:0 0 12px}
+.founders h3{font-family:var(--display);font-weight:600;font-size:clamp(26px,3vw,38px);line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.founder-list{list-style:none;margin:0;padding:0;display:grid;border-top:1px solid var(--ink)}
+.founder{display:grid;grid-template-columns:minmax(0,11em) minmax(0,1fr);grid-template-areas:"name desc" "co desc";column-gap:28px;row-gap:4px;align-content:start;padding-block:22px;border-bottom:1px solid var(--line)}
+.founder p{margin:0}
+.f-name{grid-area:name;font-family:var(--display);font-weight:600;font-size:21px;letter-spacing:-.01em;line-height:1.2}
+.f-co{grid-area:co;color:var(--accent)}
+.f-desc{grid-area:desc;color:var(--muted);max-width:52ch}
+@media (max-width:900px){.founders{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){.founder{grid-template-columns:minmax(0,1fr);grid-template-areas:"name" "co" "desc";row-gap:6px}}
+
+/* Compact cases */
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,56px);padding-block:56px;border-bottom:1px solid var(--line)}
+.compact{display:grid;gap:20px;align-content:start}
+.compact h3{font-size:clamp(24px,2.4vw,30px);margin:0}
+.compact .client{margin:0}
+.compact p{margin:0}
+
+/* More video */
+.more{padding-block:48px 72px}
+.more .row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:20px}
+
+/* Process */
+.process ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-bottom:1px solid var(--line)}
+.process li{padding:28px 24px 40px 0;border-right:1px solid var(--line);margin-right:24px}
+.process li:last-child{border-right:0;margin-right:0}
+.process .step{color:var(--accent)}
+.process h3{font-family:var(--display);font-weight:600;font-size:26px;margin:10px 0 10px;letter-spacing:-.015em}
+.process p{margin:0;color:var(--muted);font-size:16px}
+.process .lede{max-width:60ch;color:var(--muted);margin:4px 0 0;padding-bottom:8px}
+
+/* AI */
+.ai{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;padding-block:56px;border-bottom:1px solid var(--line);align-items:start}
+.ai h2{font-family:var(--display);font-weight:600;font-size:24px;margin:0;letter-spacing:-.01em}
+.ai p{margin:14px 0 0;max-width:58ch;color:var(--muted)}
+.tools{display:flex;flex-wrap:wrap;gap:8px}
+.tools span{font-family:var(--mono);font-size:13px;border:1px solid var(--ink);border-radius:6px;padding:6px 12px}
+
+/* Contact */
+footer{padding-block:80px 64px;display:grid;gap:28px}
+footer h2{font-family:var(--display);font-weight:800;font-size:clamp(38px,7vw,88px);line-height:.95;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.contact .addr{font-family:var(--mono);font-size:15px;user-select:all;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:10px 14px}
+.contact button{font:inherit;font-size:15px;background:var(--ink);color:var(--ground);border:0;border-radius:999px;padding:11px 18px;cursor:pointer}
+.contact button:hover{background:var(--accent);color:var(--accent-ink)}
+.contact a.link{font-size:15px;color:var(--muted)}
+.fine{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media (max-width:900px){
+  .case,.intro,.ai,.campaign{grid-template-columns:minmax(0,1fr)}
+  .pair{grid-template-columns:minmax(0,1fr)}
+  .process ol{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .process li:nth-child(2){border-right:0;margin-right:0}
+  .more .row{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  .reel{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .frame.span2{grid-column:span 2}
+  .process ol{grid-template-columns:minmax(0,1fr)}
+  .process li{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding-right:0}
+  .process li:last-child{border-bottom:0}
+  .more .row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  nav ul{gap:16px}
+}
+</style>
+
+</head><body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="who" href="#top">Kaya Nogalska</a>
+    <ul>
+      <li><a href="#work">Selected Creative</a></li>
+      <li><a href="#process">How I work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <span class="rec mono">Creative Producer</span>
+    <h1>Kaya<br>Nogalska</h1>
+    <p class="role"><strong>Creative Producer</strong> · Video, Design &amp; Campaigns</p>
+    <p class="thesis">I turn ideas, audience insights and campaign goals into finished creative.</p>
+    <a class="cta" href="#work">Selected Creative <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <section class="intro" aria-label="About">
+    <div>
+      <div class="sectors" aria-label="Sectors">
+        <span>AI</span><span>Ecommerce</span><span>Fashion</span><span>Wellness</span>
+      </div>
+    </div>
+    <div>
+      <p>My work spans short-form video, visual design, paid social, founder content and campaign creative across AI, ecommerce, fashion and wellness brands.</p>
+      <p>I work across the full process, from research and concept development to scripting, production, editing and launch. I'm most interested in why a piece of creative works, and how the next version can work better.</p>
+    </div>
+  </section>
+
+  <section class="numbers" aria-labelledby="num-h">
+    <h2 id="num-h" class="mono">By the numbers</h2>
+    <dl>
+      <div class="num lead"><dt>Creative assets produced</dt><dd>1,000s</dd></div>
+      <div class="num"><dt>Founder content engines built</dt><dd>3+</dd></div>
+      <div class="num"><dt>Short-form videos created</dt><dd>400+</dd></div>
+      <div class="num"><dt>Campaigns launched</dt><dd>40+</dd></div>
+      <div class="num"><dt>Creative variations developed</dt><dd>50+</dd></div>
+      <div class="num"><dt>Founder-led content pieces produced</dt><dd>100s</dd></div>
+      <div class="num"><dt>Webinar, launch &amp; event campaigns delivered</dt><dd>15+</dd></div>
+      <div class="num"><dt>Brands worked with</dt><dd>6+</dd></div>
+      <div class="num"><dt>Largest community managed</dt><dd>40K+</dd></div>
+      <div class="num"><dt>Audience grown from 0 in one month</dt><dd>2.3K+</dd></div>
+    </dl>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
+    <div class="sec-head">
+      <h2 id="work-h">Selected Creative</h2>
+      <span class="mono">Video · Design · Campaigns</span>
+    </div>
+
+    <!-- OUTCRAFT -->
+    <article class="case" aria-labelledby="oc-h">
+      <div>
+        <p class="client mono">Outcraft AI</p>
+        <h3 id="oc-h">Building creative for an AI sales platform</h3>
+        <p>At Outcraft, I work across the full creative process: campaign ideas, founder content, paid social creative, video, visual assets and launch campaigns for ecommerce and B2B audiences.</p>
+        <p>I use customer insights, campaign performance and market research to find new ways of explaining the product, then turn those ideas into finished creative.</p>
+        <div class="meta">
+          <div>
+            <span class="label mono">My role</span>
+            <div class="chips"><span>Creative concepts</span><span>Campaign direction</span><span>Video</span><span>Design</span><span>Copy</span><span>Founder content</span><span>Paid creative</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="reel">
+        <p class="reel-label mono">Ad creatives · Meta &amp; LinkedIn</p>
+        <figure class="frame sq"><div class="screen live"><img src="media/outcraft-ad-buyer-ready.jpg" alt="Outcraft ad: Your buyer's ready. Outcraft responds. Right now." loading="lazy"></div><figcaption><b>"Your buyer's ready"</b>Lifestyle ad for ecommerce owners</figcaption></figure>
+        <figure class="frame sq"><div class="screen live"><img src="media/outcraft-ad-inbound-signal.jpg" alt="Outcraft ad: Go from inbound signal to sales conversation in seconds, with product UI" loading="lazy"></div><figcaption><b>"Inbound signal to conversation"</b>Product UI ad</figcaption></figure>
+        <figure class="frame sq"><div class="screen live"><img src="media/outcraft-ad-dont-wait.jpg" alt="Outcraft ad: Ready buyers don't wait. Outcraft responds in seconds." loading="lazy"></div><figcaption><b>"Ready buyers don't wait"</b>Typographic ad</figcaption></figure>
+        <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/outcraft-short-form.jpg" src="media/outcraft-short-form.mp4" aria-label="Outcraft short-form video on the 15 to 20 percent phone connection rate"></video></div><figcaption><b>Short-form video</b>"15–20% phone connection rate"</figcaption></figure>
+        <figure class="frame p45"><div class="screen live"><video controls playsinline muted loop preload="metadata" poster="media/outcraft-animation-ad.jpg" src="media/outcraft-animation-ad.mp4" aria-label="Outcraft animated ad: an AI conversation with a shopper that ends in a completed order"></video></div><figcaption><b>Animation ad</b>AI conversation to completed order</figcaption></figure>
+        <figure class="frame"><div class="screen live"><video controls playsinline muted loop preload="metadata" poster="media/outcraft-short-animation.jpg" src="media/outcraft-short-animation.mp4" aria-label="Outcraft short animation: an abandoned cart becomes a converted buyer and recovered revenue"></video></div><figcaption><b>Short animation</b>Abandoned cart to recovered revenue</figcaption></figure>
+        <figure class="frame wide span-all"><div class="screen live"><video controls playsinline muted loop preload="metadata" poster="media/outcraft-product-analytics.jpg" src="media/outcraft-product-analytics.mp4" aria-label="Outcraft product screen recording of the analytics dashboard"></video></div><figcaption><b>Product screen recording</b>Analytics dashboard walkthrough</figcaption></figure>
+      </div>
+    </article>
+
+    <!-- OUTCRAFT: WEBINAR CAMPAIGN -->
+    <article class="campaign" aria-labelledby="web-h">
+      <div class="campaign-text">
+        <p class="client mono">Outcraft AI · Featured campaign</p>
+        <h3 id="web-h">From webinar idea to full campaign</h3>
+        <p>I helped shape and produce a full webinar campaign for Outcraft, built around insights from more than 2M AI calls.</p>
+        <p>My work covered the concept, positioning, title, landing page, Meta and LinkedIn creative, animations, speaker slides, founder talking points and post-webinar content.</p>
+        <a class="watch" href="https://www.youtube.com/watch?v=aUhKBj3CSuw" target="_blank" rel="noopener"><span class="yt" aria-hidden="true"><svg viewBox="0 0 10 12"><path d="M0 0l10 6-10 6z"/></svg></span>Watch the full webinar on YouTube <span aria-hidden="true">↗</span></a>
+        <div class="meta">
+          <div>
+            <span class="label mono">My role</span>
+            <div class="chips"><span>Concept</span><span>Campaign messaging</span><span>Visual direction</span><span>Creative production</span><span>Content repurposing</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="campaign-side">
+      <figure class="frame wide"><div class="screen live"><video controls playsinline preload="metadata" poster="media/webinar-teaser.jpg" src="media/webinar-teaser.mp4" aria-label="Animated webinar teaser: 2M+ AI calls, live webinar September 24"></video></div><figcaption><b>Webinar teaser</b>Animated launch teaser</figcaption></figure>
+      <div class="reel">
+        <p class="reel-label mono">Webinar ad creatives · Meta &amp; LinkedIn</p>
+        <figure class="frame p45"><div class="screen live"><img src="media/webinar-ad-register.jpg" alt="Webinar ad: How AI calls convert ecommerce demand, register now" loading="lazy"></div><figcaption><b>"Register now"</b>Launch ad</figcaption></figure>
+        <figure class="frame p45"><div class="screen live"><img src="media/webinar-ad-2m-calls.jpg" alt="Webinar ad: 2,000,000 AI calls later, here's what converts high-intent buyers" loading="lazy"></div><figcaption><b>"2,000,000 AI calls later"</b>Data-led hook</figcaption></figure>
+        <figure class="frame p45"><div class="screen live"><img src="media/webinar-ad-sharing-live.jpg" alt="Webinar ad: phone note listing things 2M AI calls taught us, we're sharing the rest live" loading="lazy"></div><figcaption><b>"We're sharing the rest live"</b>Teaser, native-notes format</figcaption></figure>
+      </div>
+      <div class="cs-pair">
+      <div class="reel solo">
+        <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/outcraft-webinar-visual.jpg" src="media/outcraft-webinar-clip.mp4" aria-label="YouTube Short or Reel from the webinar on early-stage challenges"></video></div><figcaption><b>YouTube Short / Reel</b>Post-webinar content, with custom thumbnail</figcaption></figure>
+      </div>
+      <div class="runsheet" aria-label="Campaign run sheet">
+        <div class="rs-head mono"><span>Run sheet</span><span>Idea → launch → after</span></div>
+        <ol>
+          <li><span class="mono">Before</span><b>Concept &amp; positioning</b></li>
+          <li><span class="mono">Before</span><b>Webinar title</b></li>
+          <li><span class="mono">Promote</span><b>Landing page</b></li>
+          <li><span class="mono">Promote</span><b>Meta &amp; LinkedIn creative</b></li>
+          <li><span class="mono">Promote</span><b>Animations</b></li>
+          <li><span class="mono">Live</span><b>Speaker slides</b></li>
+          <li><span class="mono">Live</span><b>Founder talking points</b></li>
+          <li><span class="mono">After</span><b>Post-webinar content</b></li>
+        </ol>
+      </div>
+      </div>
+      </div>
+    </article>
+
+    <!-- FORREST YOGA -->
+    <article class="case" aria-labelledby="fy-h">
+      <div>
+        <p class="client mono">Forrest Yoga</p>
+        <h3 id="fy-h">Community storytelling &amp; campaign creative</h3>
+        <p>For Forrest Yoga, I develop social and campaign creative for a global yoga community of 40K followers, from short-form video and visual content to teacher training promotions and community stories.</p>
+        <p class="note">For the teacher training campaign, I contacted students directly, sourced their testimonials and footage, picked the strongest stories and edited them into the final promo video.</p>
+        <div class="meta">
+          <div>
+            <span class="label mono">My role</span>
+            <div class="chips"><span>Concept</span><span>Outreach</span><span>Contributor coordination</span><span>Story selection</span><span>Editing</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="campaign-side">
+      <div class="reel solo">
+        <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/forrest-testimonials.jpg" src="media/forrest-testimonials.mp4" aria-label="Forrest Yoga teacher training promo built from student testimonials"></video></div><figcaption><b>Teacher training promo</b>Built from student testimonials</figcaption></figure>
+      </div>
+      <div class="reel">
+        <p class="reel-label mono">Social &amp; campaign visuals</p>
+        <figure class="frame p45"><div class="screen live"><img src="media/forrest-free-class.jpg" alt="Forrest Yoga post: Curious about Forrest Yoga? Try a class for free." loading="lazy"></div><figcaption><b>"Try a class for free"</b>Acquisition post</figcaption></figure>
+        <figure class="frame p45"><div class="screen live"><img src="media/forrest-houston.jpg" alt="Forrest Yoga is coming to Houston: workshops with Ana Forrest and Jose Calarco, US workshop tour fall 2026" loading="lazy"></div><figcaption><b>"Coming to Houston"</b>US workshop tour promo</figcaption></figure>
+        <figure class="frame p45"><div class="screen live"><img src="media/forrest-spirit-home.jpg" alt="Forrest Yoga post: Do what guides your Spirit home." loading="lazy"></div><figcaption><b>"Guides your Spirit home"</b>Community brand post</figcaption></figure>
+      </div>
+            <div class="carousel" aria-roledescription="carousel" aria-label="Instagram carousel: 3 things people get wrong about Forrest Yoga">
+        <div class="car-head"><p class="reel-label mono">Instagram carousel</p><div class="car-ctrl"><span class="car-count mono" id="fy-count">1 / 5</span><button type="button" class="car-btn" id="fy-prev" aria-label="Previous slide">←</button><button type="button" class="car-btn" id="fy-next" aria-label="Next slide">→</button></div></div>
+        <ol class="car-track" id="fy-track">
+          <li class="slide"><img src="media/forrest-carousel-1.jpg" alt="Slide 1 of 5: 3 things people get wrong about Forrest Yoga" loading="lazy"></li>
+          <li class="slide"><img src="media/forrest-carousel-2.jpg" alt="Slide 2 of 5: Myth: You need to be flexible. You don't." loading="lazy"></li>
+          <li class="slide"><img src="media/forrest-carousel-3.jpg" alt="Slide 3 of 5: Myth: It's only for advanced practitioners." loading="lazy"></li>
+          <li class="slide"><img src="media/forrest-carousel-4.jpg" alt="Slide 4 of 5: Myth: It's all about intense poses." loading="lazy"></li>
+          <li class="slide"><img src="media/forrest-carousel-5.jpg" alt="Slide 5 of 5: Forrest Yoga isn't about proving what your body can do." loading="lazy"></li>
+        </ol>
+        <p class="car-cap"><b>"3 things people get wrong about Forrest Yoga"</b> Myth-busting carousel for newcomers</p>
+      </div>
+      </div>
+    </article>
+
+    <!-- FOUNDER CONTENT -->
+    <section class="founders" aria-labelledby="fc-h">
+      <div class="founders-head">
+        <p class="client mono">Personal brands</p>
+        <h3 id="fc-h">Founder Content &amp; Personal Brands</h3>
+      </div>
+      <ul class="founder-list">
+        <li class="founder">
+          <p class="f-name">Will Nauseda</p>
+          <p class="f-co mono">Outcraft AI</p>
+          <p class="f-desc">Led the content calendar across video, LinkedIn posts, carousels, campaign content and thought leadership.</p>
+        </li>
+        <li class="founder">
+          <p class="f-name">Edvinas Rakickas</p>
+          <p class="f-co mono">Outcraft AI</p>
+          <p class="f-desc">Developed content angles, founder posts and product-led thought leadership across multiple formats.</p>
+        </li>
+        <li class="founder">
+          <p class="f-name">Gilles Praet</p>
+          <p class="f-co mono">Visiblie</p>
+          <p class="f-desc">Turned founder expertise into scripts, social posts and short-form video, from briefing through final creative.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- VISIBLIE + ADFIX -->
+    <div class="pair">
+      <article class="compact case-sm" aria-labelledby="vi-h">
+        <p class="client mono" style="color:var(--accent)">Visiblie</p>
+        <h3 id="vi-h" style="font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.1">Turning founder expertise into short-form content</h3>
+        <p>I developed the concept and script, briefed the founder before filming, then worked with the raw footage to create the finished video.</p>
+        <div class="chips"><span>Concept</span><span>Script</span><span>Creative direction</span><span>Editing</span><span>Delivery</span></div>
+        <div class="reel two">
+          <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/visiblie-founder.jpg" src="media/visiblie-founder.mp4" aria-label="Visiblie founder short-form video"></video></div><figcaption><b>Founder video</b>Scripted short-form</figcaption></figure>
+          <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/visiblie-case-study.jpg" src="media/visiblie-case-study.mp4" aria-label="Visiblie case study video"></video></div><figcaption><b>Case study video</b>Data-led founder story</figcaption></figure>
+        </div>
+      </article>
+
+      <article class="compact case-sm" aria-labelledby="ad-h">
+        <p class="client mono" style="color:var(--accent)">Adfix</p>
+        <h3 id="ad-h" style="font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.1">A fashion video made entirely from existing brand assets</h3>
+        <p>The brief was a dynamic social video with no new shoot. I sourced the imagery and product assets from the brand's website, developed the visual concept and edited the final creative.</p>
+        <div class="chips"><span>Concept</span><span>Asset sourcing</span><span>Visual design</span><span>Editing</span></div>
+        <div class="reel two">
+          <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/adfix-reel.jpg" src="media/adfix-reel.mp4" aria-label="Adfix fashion reel made from existing brand assets"></video></div><figcaption><b>Fashion reel</b>Made from website assets</figcaption></figure>
+        </div>
+      </article>
+    </div>
+
+    <!-- MORE VIDEO -->
+    <section class="more" aria-labelledby="more-h">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap">
+        <h3 id="more-h" style="font-family:var(--display);font-weight:600;font-size:26px;margin:0;letter-spacing:-.015em">More UGC &amp; short-form</h3>
+        <span class="mono" style="color:var(--muted)">Autorender AI</span>
+      </div>
+      <p style="margin:10px 0 0;max-width:62ch;color:var(--muted)">UGC ads for Autorender AI, a rendering tool for architects. Each one opens on a different hook, from a flat sketch turning into a finished render to a direct challenge to the viewer.</p>
+      <div class="row">
+        <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/autorender-ugc-1.jpg" src="media/autorender-ugc-1.mp4" aria-label="Autorender AI UGC ad, sketch to render"></video></div><figcaption><b>Sketch to render</b>UGC ad</figcaption></figure>
+        <figure class="frame"><div class="screen live"><video controls playsinline preload="metadata" poster="media/autorender-ugc-2.jpg" src="media/autorender-ugc-2.mp4" aria-label="Autorender AI UGC ad, most architects don't need more software"></video></div><figcaption><b>"Most architects don't need…"</b>UGC ad</figcaption></figure>
+      </div>
+    </section>
+  </section>
+
+  <section class="process" id="process" aria-labelledby="proc-h">
+    <div class="sec-head">
+      <h2 id="proc-h">From idea to finished creative</h2>
+      <span class="mono">How I work</span>
+    </div>
+    <ol>
+      <li><span class="step mono">Step 1</span><h3>Research</h3><p>Audience behaviour, competitors, platform formats and campaign insights.</p></li>
+      <li><span class="step mono">Step 2</span><h3>Concept</h3><p>Hooks, stories, scripts, formats and visual direction.</p></li>
+      <li><span class="step mono">Step 3</span><h3>Produce</h3><p>Video, design, editing, creator coordination and final delivery.</p></li>
+      <li><span class="step mono">Step 4</span><h3>Review</h3><p>Look at how the audience and campaign responded, find what worked, and use it to shape the next idea.</p></li>
+    </ol>
+  </section>
+
+  <section class="ai" aria-labelledby="ai-h">
+    <div><h2 id="ai-h">AI in my creative workflow</h2></div>
+    <div>
+      <div class="tools"><span>Claude</span><span>ChatGPT</span><span>Nano Banana Pro</span><span>Captions.ai</span></div>
+      <p>I use AI throughout the creative process for research, ideation, scripts, visual exploration, content organisation and faster production.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <span class="rec mono">Open to new projects</span>
+    <h2>Let's make the next one.</h2>
+    <div class="contact">
+      <span class="addr" id="email">kayanogalska@gmail.com</span>
+      <button type="button" id="copy">Copy email</button>
+      <a class="link" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <div class="fine"><span>© 2026 Kaya Nogalska</span><span>Creative Producer · Video, Design &amp; Campaigns</span></div>
+  </footer>
+</div>
+
+<script>
+(function(){var t=document.getElementById('fy-track');if(!t)return;var n=t.children.length,c=document.getElementById('fy-count'),pv=document.getElementById('fy-prev'),nx=document.getElementById('fy-next');
+function idx(){var w=t.children[0].getBoundingClientRect().width+12;return Math.round(t.scrollLeft/w)}
+function upd(){var i=Math.min(n-1,idx());if(t.scrollLeft+t.clientWidth>=t.scrollWidth-4)i=n-1;c.textContent=(i+1)+' / '+n;pv.disabled=i<=0;nx.disabled=i>=n-1}
+function go(d){var i=Math.max(0,Math.min(n-1,idx()+d));t.scrollTo({left:t.children[i].offsetLeft-t.offsetLeft,behavior:'smooth'})}
+pv.addEventListener('click',function(){go(-1)});nx.addEventListener('click',function(){go(1)});t.addEventListener('scroll',upd,{passive:true});upd();})();
+document.querySelectorAll('video').forEach(function(v){
+  v.addEventListener('play',function(){document.querySelectorAll('video').forEach(function(o){if(o!==v)o.pause()})});
+});
+document.getElementById('copy').addEventListener('click', function(){
+  var btn=this, text=document.getElementById('email').textContent;
+  function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy email'},1600)}
+  try{
+    navigator.clipboard.writeText(text).then(done,function(){selectIt()});
+  }catch(e){selectIt()}
+  function selectIt(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Press ⌘C to copy'}
+});
+</script>
+
+</body></html>
